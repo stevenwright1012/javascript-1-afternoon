@@ -9,6 +9,8 @@ function greeting(name){
   return "Hello, " + name;
 }
 
+console.log(greeting("Trogdor"));
+
 //////////////////PROBLEM 2////////////////////
 
 //Rewrite the function greeting as a function expression.
@@ -17,6 +19,7 @@ function greeting(name){
 var newGreeting = function(name){
   return "Hello, " + name;
 }
+console.log(newGreeting("Trogdor"));
 
 //////////////////PROBLEM 3////////////////////
 
@@ -24,6 +27,8 @@ var newGreeting = function(name){
 //Name it finalGreeting.
 
 var finalGreeting = name => "Hello, " + name;
+
+console.log(finalGreeting("Trogdor"));
 
 //////////////////PROBLEM 4////////////////////
 
@@ -47,6 +52,8 @@ function doubleCheck(arr){
   }
   return arr;
 }
+
+console.log(doubleCheck(groceries));
 
 //////////////////PROBLEM 5////////////////////
 
@@ -77,6 +84,8 @@ dog.bark = () => "Woof woof";
 
 var ruff = dog.bark();
 
+console.log(ruff);
+
 //////////////////PROBLEM 6////////////////////
 
 //Write a function called looper that takes in an array. looper should declare
@@ -98,6 +107,10 @@ function looper(arr){
   return mySum;
 }
 
+numbersArr = [1,2,3,4,5,6,100,101,102,103]
+
+console.log(looper(numbersArr));
+
 //////////////////PROBLEM 7////////////////////
 
 //Given the following function called math
@@ -116,6 +129,8 @@ var add = (num1, num2) => num1 + num2;
 
 var mathSum = math(3,4, add);
 
+console.log(mathSum);
+
 //////////////////PROBLEM 8////////////////////
 
 //Write a function called invoker that takes in one paramter, a callback function.
@@ -130,6 +145,8 @@ function sampleCallbackTwo() {
 }
 
 var invoker = (cb) => cb();
+
+console.log(invoker(sampleCallbackTwo));
 
 //////////////////PROBLEM 9////////////////////
 
@@ -183,3 +200,4 @@ var innerFn = outerFn();
 
 var finalResult = innerFn();
 
+console.log(finalResult);
